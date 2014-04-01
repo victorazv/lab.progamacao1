@@ -1,0 +1,41 @@
+Questão 1 :
+
+#include<stdio.h>
+
+int main (){
+    printf("Olá, mundo!");
+    system("pause"); 
+}
+
+Questão 2 :
+
+Inclui a biblioteca stdio.h, chama a funç]ao principal (main), declara o inteiro X, lê um valor para o mesmo e depois o imprime na tela. Retorna zero.
+
+Questão 3 :
+
+#include<stdio.h>
+
+int main (){
+    int x;
+    printf("Digite um número:");
+    scanf("%d", &x);
+    printf("O número informado foi : %d", x );
+    system("pause");
+}
+
+Questão 6 :
+
+Com está usando somente um senal de igual, está fazendo uma atribuição do valor 10 à variável num. Como essa condição sempre será verdadeira, o código desse if sempre será executado.
+
+Questão 7:
+
+#include<stdio.h>
+
+int main (){
+    float a, b, soma;
+    printf("Digite dois números para somá-los:");
+    scanf("%f %f", &a, &b);
+    soma = a + b;
+    printf("A soma de %f e %f é : %f", a, b, soma);
+    system("pause");
+}
