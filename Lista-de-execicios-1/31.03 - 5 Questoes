@@ -25,9 +25,9 @@ int main (){
 
 Questão 6 :
 
-Com está usando somente um senal de igual, está fazendo uma atribuição do valor 10 à variável num. Como essa condição sempre será verdadeira, o código desse if sempre será executado.
+Como está usando somente um sinal de igual, está fazendo uma atribuição do valor 10 à variável num. Como essa condição sempre será verdadeira, o código desse if sempre será executado.
 
-Questão 7:
+Questão 7 :
 
 #include<stdio.h>
 
@@ -39,3 +39,157 @@ int main (){
     printf("A soma de %f e %f é : %f", a, b, soma);
     system("pause");
 }
+
+Questão 8 :
+
+#include<stdio.h>
+
+float main(){
+    float n1, n2, n3, n4, media;
+    
+    printf("Digite a primeira nota bimestral para obter a media:");
+    scanf("%f", &n1);
+    printf("Digite a segunda nota: ");
+    scanf("%f", &n2);
+    printf("Digite a terceira nota: ");
+    scanf("%f", &n3); 
+    printf("Digite a quarta nota: ");
+    scanf("%f", &n4);
+    media = (n1 + n2 +n3 +n4) / 4 ;
+    printf("A media das 4 notas eh %f \n", media);
+    system("pause");
+}
+
+
+Questão 9 :
+
+#include<stdio.h>
+
+float main(){
+    float m, cm;
+    
+    printf("Digite um numero em metros para saber a quantos centimetros corresponde: ");
+    scanf("%f", &m);
+    cm = m * 100;
+    printf("%.2f metros equivale a %.2f centimetros",m, cm);
+    system("pause");    
+}
+
+Questão 11 :
+
+#include<stdio.h>
+
+float main(){
+    float l, a, da;
+    
+    printf("Digite o tamanho do lado do quadrado:");
+    scanf("%f", &l);
+    a = l * l;
+    da = 2 * a;
+    printf("O dobro da area do quadrado que possui o lado informado eh %.2f", da);
+    system("pause");
+}
+
+Questão 12 :
+
+#include<stdio.h>
+
+int main(){
+    int h, m, s;
+    
+    printf("Digite quanto voce ganha por hora: ");
+    scanf("%d", &h);
+    printf("Digite quantas horas voce trabalha no mes: ");
+    scanf("%d", &m);
+    s = h * m;
+    printf("Voce ganha no mes %d", s);
+    system("pause");
+}
+
+Questão 13 :
+
+Questão 14 :
+
+Questão 15 :
+A, B e C juntas.
+
+#include<stdio.h>
+#include<stdio.h>
+
+int main(){
+    int x, y, a ;
+    float z, b, c ;
+    printf("Digite dois numeros inteiros e um real ");    
+    scanf("%d", &x);
+    scanf("%d", &y);
+    scanf("%f", &z);
+    a = (2 * x) * (y / 2);  
+    b = (3 * a) + z;
+    c = z * z * z;    
+    printf("A resposta da letra A eh: %d\nA letra B eh: %2.f\n A letra C eh: %2.f\n", a, b, c);
+    system("pause");
+}
+
+Questão 16 :
+
+#include<stdio.h>
+
+int main(){
+    float peso, altura, pideal;
+   
+    printf("Digite o seu peso e altura");
+    scanf("%f", &peso);
+    scanf("%f", &altura);
+    pideal = (72.7*altura) - 58;
+    printf("O seu peso ideal eh : %fkg\n", pideal);
+
+    system("pause");
+}
+
+Questão 17 :
+//Admitindo que o peso ideal é exatamente o da fórmula
+
+#include<stdio.h>
+
+int main(){
+    float altura, peso, pideal;
+    char sexo;
+    
+    printf("Digite a sua altura :");
+    scanf("%f", &altura);
+    printf("Digite o seu sexo : \nf para Feminino e m para masculino(Em minusculo)\n");
+    scanf("%s", &sexo);
+    
+    if(sexo == 'm'){
+        pideal = (72.7*altura) - 58;    
+        printf("Digite o seu peso");
+        scanf("%f", &peso);
+        if(peso == pideal){
+            printf("Voce esta com o peso ideal\n");
+        }        
+        if(peso > pideal){
+            printf("Voce esta acima do peso\n");
+        }
+        else{
+            printf("Voce esta abaixo do peso\n");
+        }
+    }
+    if(sexo == 'f'){
+        pideal = (62.1*altura) - 44.7;
+        printf("Digite o seu peso");
+        scanf("%f", &peso);
+        if(peso == pideal){
+            printf("Voce esta com o peso ideal\n");
+        }
+        if(peso > pideal){
+            printf("Voce esta acima do peso\n");
+        }
+        else{
+            printf("Voce esta abaixo do peso\n");
+        }
+    }
+    system("pause");
+}
+
+Questão 18 :
+
