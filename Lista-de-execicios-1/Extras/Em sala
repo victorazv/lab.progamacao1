@@ -1,0 +1,52 @@
+07/04/17
+
+#include<stdio.h>
+
+int main(){
+
+int x,y,z;
+x = y = z= 10;
+	printf("%d, %d, %d", x,y,z);
+z = (z++);
+	printf("\n%d, %d, %d", x,y,z);
+x = -x;,
+
+	printf("\n%d, %d, %d", x,y,z);
+y++;
+	printf("\n%d, %d, %d", x,y,z);
+x = x + y - (z--);
+	printf("\n%d, %d, %d", x,y,z);
+system("pause");
+return 0;
+}
+
+#include<stdio.h>
+
+int main(){
+
+int a = 10, b = 1, c = 12;
+printf("%d", (a>b+c));
+
+system("pause");
+//retorna 0
+}
+
+14/04/14
+
+//Construa um programa que tendo um valor definido, leia um valor do usuário 
+//e diga se o valor digitado é maior/igual ou menor que o valor definido
+
+#include<stdio.h>
+
+int main(){
+	int x, y;
+	y = 30;
+	printf("Digite um valor X (inteiro) para saber se ele eh maior ou menor que um Y definido\n");
+	scanf("%d", &x);
+	if(x >= y){
+		printf("O valor digitado eh maior ou igual!\n");
+	}
+	else{
+		printf("O valor digitado eh menor !\n");		
+	}
+}
