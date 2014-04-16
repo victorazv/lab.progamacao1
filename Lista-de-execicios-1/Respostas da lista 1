@@ -147,7 +147,37 @@ int main(){
 
 Questão 13 :
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float f, c;
+    
+	printf("Digite uma temperatura em graus Fahrenheit\n");
+    scanf("%f", &f);
+    
+    c = (5 * (f-32) / 9) ;    
+    
+    printf("A temperatura equivale a %.2f graus celsius", c);
+    return 0;
+  }
+
 Questão 14 :
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float f, c;
+    
+	printf("Digite uma temperatura em graus Celsius\n");
+    scanf("%f", &c);
+    
+    f = ((c * 1.8) + 32);
+    
+    printf("A temperatura equivale a %.2f graus Fahrenheit", f);
+    return 0;
+  }
 
 Questão 15 :
 A, B e C juntas.
