@@ -9,7 +9,7 @@ int main (){
 
 Questão 2 :
 
-Inclui a biblioteca stdio.h, chama a funç]ao principal (main), declara o inteiro X, lê um valor para o mesmo e depois o imprime na tela. Retorna zero.
+Inclui a biblioteca stdio.h, chama a função principal (main), declara o inteiro X, lê um valor para o mesmo e depois o imprime na tela. Retorna zero.
 
 Questão 3 :
 
