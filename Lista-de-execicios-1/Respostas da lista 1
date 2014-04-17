@@ -5,6 +5,7 @@ Questão 1 :
 int main (){
     printf("Olá, mundo!");
     system("pause"); 
+    return 0;
 }
 
 Questão 2 :
@@ -21,6 +22,7 @@ int main (){
     scanf("%d", &x);
     printf("O número informado foi : %d", x );
     system("pause");
+    return 0;
 }
 
 Questão 4 :
@@ -43,7 +45,21 @@ int main(){
  
 Questão 5 :
 
+#include <stdio.h>
+#include <string.h>
+int main(){
+	char s1[20], s2[20];
 
+	printf("Digite a primeira palavra (string)\n");
+	fgets(s1, 20, stdin);
+	printf("Digite a segunda palavra(string)\n");
+	fgets(s2, 20, stdin);
+	
+	printf("A segunda letra da primeira string eh %c e a da segunda string eh %c\n", s1[1], s2[1]);
+
+	system("pause");
+	return 0;
+}
 
 Questão 6 :
 
@@ -60,6 +76,7 @@ int main (){
     soma = a + b;
     printf("A soma de %f e %f é : %f", a, b, soma);
     system("pause");
+    return 0;
 }
 
 Questão 8 :
@@ -80,6 +97,7 @@ float main(){
     media = (n1 + n2 +n3 +n4) / 4 ;
     printf("A media das 4 notas eh %f \n", media);
     system("pause");
+    return 0;
 }
 
 
@@ -95,6 +113,7 @@ float main(){
     cm = m * 100;
     printf("%.2f metros equivale a %.2f centimetros",m, cm);
     system("pause");    
+    return 0;
 }
 
 Questão 10 :
@@ -127,6 +146,7 @@ float main(){
     da = 2 * a;
     printf("O dobro da area do quadrado que possui o lado informado eh %.2f", da);
     system("pause");
+    return 0;
 }
 
 Questão 12 :
@@ -143,6 +163,7 @@ int main(){
     s = h * m;
     printf("Voce ganha no mes %d", s);
     system("pause");
+    return 0;
 }
 
 Questão 13 :
@@ -197,6 +218,7 @@ int main(){
     c = z * z * z;    
     printf("A resposta da letra A eh: %d\nA letra B eh: %2.f\n A letra C eh: %2.f\n", a, b, c);
     system("pause");
+    return 0;
 }
 
 Questão 16 :
@@ -213,6 +235,7 @@ int main(){
     printf("O seu peso ideal eh : %fkg\n", pideal);
 
     system("pause");
+    return 0;
 }
 
 Questão 17 :
@@ -258,6 +281,7 @@ int main(){
         }
     }
     system("pause");
+    return 0;
 }
 
 Questão 18 :
