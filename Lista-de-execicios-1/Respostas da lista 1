@@ -309,3 +309,36 @@ int main(){
 
 Questão 19 :
 
+#include <stdio.h>
+
+int main(){ 
+	float ir, inss, sin, sl, v, h, sb = 0;
+ 
+	printf("Digite quanto voce ganha por hora\n");
+	scanf("%f", &v);
+	
+	printf("Digite quantas horas voce trabalha no mes\n");
+	scanf("%f", &h);
+	
+	sb = v * h;
+	ir = (sb/100) * 11;
+	inss = (sb/100) * 8;
+	sin = (sb/100) * 5;
+	sl = sb - (ir + inss + sin);
+	printf("Salario bruto: R$%.2f\n", sb);
+	
+	printf("IR (11%): R$%.2f\n", ir);
+	
+	printf("INSS (8%): R$%.2f\n", inss);
+	
+	printf("Sindicato (5%): R$%.2f\n", sin);
+	
+	printf("Salario liquido: R$%.2f\n", sl);
+	
+	
+	system("pause");
+	return 0;
+}
+
+Questão 20 :
+
