@@ -342,3 +342,26 @@ int main(){
 
 Questão 20 :
 
+#include <stdio.h>
+
+int main(){ 
+	int mb;
+	float tempo, link;
+	
+	printf("Digite o tamanho em mb do arquivo para download\n");
+	scanf("%d", &mb);
+	
+	printf("Digite a velocidade do seu link de internet em Mbps\n");
+	scanf("%f", &link);
+	
+	link = link * 1024;
+	link = link / 8;
+	
+	mb = mb * 1024;
+	
+	tempo = (mb / link) / 60;
+	printf("O tempo estimado de download do arquivo neste link eh : %.2f minutos\n", tempo);
+	
+	system("pause");
+	return 0;
+}
