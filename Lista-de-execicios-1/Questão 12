@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+    int h, m, s;
+    
+    printf("Digite quanto voce ganha por hora: ");
+    scanf("%d", &h);
+    printf("Digite quantas horas voce trabalha no mes: ");
+    scanf("%d", &m);
+    s = h * m;
+    printf("Voce ganha no mes %d", s);
+    system("pause");
+    return 0;
+}
