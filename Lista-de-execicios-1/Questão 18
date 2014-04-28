@@ -1,0 +1,44 @@
+//Admitindo que o peso ideal é exatamente o da fórmula
+
+#include<stdio.h>
+
+int main(){
+    float altura, peso, pideal;
+    char sexo;
+    
+    printf("Digite a sua altura :");
+    scanf("%f", &altura);
+    printf("Digite o seu sexo : \nf para Feminino e m para masculino(Em minusculo)\n");
+    scanf("%s", &sexo);
+    
+    if(sexo == 'm'){
+        pideal = (72.7*altura) - 58;    
+        printf("Digite o seu peso");
+        scanf("%f", &peso);
+        if(peso == pideal){
+            printf("Voce esta com o peso ideal\n");
+        }        
+        if(peso > pideal){
+            printf("Voce esta acima do peso\n");
+        }
+        else{
+            printf("Voce esta abaixo do peso\n");
+        }
+    }
+    if(sexo == 'f'){
+        pideal = (62.1*altura) - 44.7;
+        printf("Digite o seu peso");
+        scanf("%f", &peso);
+        if(peso == pideal){
+            printf("Voce esta com o peso ideal\n");
+        }
+        if(peso > pideal){
+            printf("Voce esta acima do peso\n");
+        }
+        else{
+            printf("Voce esta abaixo do peso\n");
+        }
+    }
+    system("pause");
+    return 0;
+}
