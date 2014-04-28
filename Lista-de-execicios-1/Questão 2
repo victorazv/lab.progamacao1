@@ -1,0 +1,1 @@
+Inclui a biblioteca stdio.h, chama a função principal (main), declara o inteiro X, lê um valor para o mesmo e depois o imprime na tela. Retorna zero.
