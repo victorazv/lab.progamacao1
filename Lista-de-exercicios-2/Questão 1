@@ -1,1 +1,11 @@
-Questão 1
+int main(){
+    float x;
+    
+    printf("Digite um numero real\n");
+    scanf("%f", &x);
+    
+    x = x * x;
+    
+    printf("O quadrado do numero digitado eh %.2f\n", x);
+    return 0;
+}
