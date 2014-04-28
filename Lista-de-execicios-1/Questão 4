@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main(){
+    char caracter;
+   
+    printf("Digite um caracter para saber o codigo ASCII correspondente se o mesmo tiver:\n");
+    caracter = getchar();
+    
+    if (isascii(caracter))
+      printf("O caracter contem o valor ASCII %d.\n", caracter);
+    else
+      printf("O caracter não contém um valor ASCII.\n");
+    return(0);
+  }
