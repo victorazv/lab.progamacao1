@@ -1,0 +1,20 @@
+#include <stdio.h>
+#define est 50
+int main(){ 
+	int p, excesso, multa = 0;
+ 
+	printf("Digite quantos quilos de peixe Joao trouxe\n");
+	scanf("%d", &p);
+	if(p > est){
+		excesso = p - est;
+		multa = excesso * 4;
+		printf("O excesso foi de %dKg e a multa de R$%d,00\n", excesso, multa);
+	}
+	else{
+		excesso = 0;
+		multa = 0;
+		printf("O excesso foi de %dKg e a multa de R$%d,00\n", excesso, multa);
+	}
+ 	system("pause");
+	return 0;
+}
