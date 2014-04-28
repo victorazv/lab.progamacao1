@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main (){
+    float a, b, soma;
+    printf("Digite dois números para somá-los:");
+    scanf("%f %f", &a, &b);
+    soma = a + b;
+    printf("A soma de %f e %f é : %f", a, b, soma);
+    system("pause");
+    return 0;
+}
