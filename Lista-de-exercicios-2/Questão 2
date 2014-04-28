@@ -1,0 +1,16 @@
+int main(){
+    int x;
+    
+    printf("Digite um numero inteiro para saber o seu antecessor e sucessor:\n");
+    scanf("%d", &x);
+    
+    x = x - 1;
+    
+    printf("O antecessor do numero digitado eh %d\n", x);
+    
+    x = x + 2;
+    
+    printf("O sucessor do numero digitado eh %d\n", x);
+    
+    return 0;
+}
