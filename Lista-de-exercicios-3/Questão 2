@@ -1,0 +1,71 @@
+//Programa feito para valores inteiros
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    int h, cons, cod, i, ctotal, v, maior, menor, media, c1, c2, c3;
+    i = 0;
+    c1 = c2 = c3 = 0;
+    printf("Codigo do consumidor :\n1 = Residencial\n2 = Comercial\n3 = Industrial\n\n");
+    printf("Digite a quantidade de habitantes da cidade:\n");
+    scanf("%d", &h);
+    if(h > 0){
+        printf("Digite o valor do Kwh\n");
+        scanf("%d", &v);
+        
+        printf("Digite quantos Kwh foram consumidos para o habitante %d\n", i);
+        scanf("%d",&cons);
+        
+        printf("Digite o codigo do consumidor %d:\n", i);
+        scanf("%d",&cod);
+
+        maior = cons;
+        menor = cons;
+        i++;
+        
+        switch(cod){
+                case 1:
+                    c1 = c1 + cons;
+                    break;
+                case 2:
+                    c2 = c2 + cons;
+                    break;
+                case 3:
+                    c3 = c3 + cons;
+                    break;
+        }
+
+        while(i < h){
+            printf("Digite quantos Kwh foram consumidos para o habitante %d\n", i);
+            scanf("%d",&cons);
+            if(cons > maior){
+                maior = cons;
+            }
+            if (cons < menor){
+                menor = cons;
+            }
+            printf("Digite o codigo do consumidor %d:\n", i);
+            scanf("%d",&cod);
+            switch(cod){
+                case 1:
+                    c1 = c1 + cons;
+                    break;
+                case 2:
+                    c2 = c2 + cons;
+                    break;
+                case 3:
+                    c3 = c3 + cons;
+                    break;
+            }
+        i++;
+        }
+        printf("O maior consumo foi de %dKwh e o menor de %dKwh\n", maior, menor);
+        media = (c1 + c2 + c3) / h ;
+        printf("A media de consumo por habitante foi de %d\n", media);
+        printf("Total de consumo da categoria 1: %d\nTotal de consumo da categoria 2: %d\nTotal de consumo da categoria 3: %d\n", c1, c2, c3);
+    }
+    else{
+        printf("A cidade não tem habitantes\n");
+    }
+    system("pause");
+    return 0;
+}
