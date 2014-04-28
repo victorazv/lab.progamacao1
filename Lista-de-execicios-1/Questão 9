@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+float main(){
+    float m, cm;
+    
+    printf("Digite um numero em metros para saber a quantos centimetros corresponde: ");
+    scanf("%f", &m);
+    cm = m * 100;
+    printf("%.2f metros equivale a %.2f centimetros",m, cm);
+    system("pause");    
+    return 0;
+}
