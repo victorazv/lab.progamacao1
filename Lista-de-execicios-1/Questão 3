@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main (){
+    int x;
+    printf("Digite um número:");
+    scanf("%d", &x);
+    printf("O número informado foi : %d", x );
+    system("pause");
+    return 0;
+}
