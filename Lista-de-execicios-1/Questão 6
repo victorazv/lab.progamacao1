@@ -1,0 +1,1 @@
+Como está usando somente um sinal de igual, está fazendo uma atribuição do valor 10 à variável num. Como essa condição sempre será verdadeira, o código desse if sempre será executado.
