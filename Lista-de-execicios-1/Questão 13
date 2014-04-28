@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float f, c;
+    
+	printf("Digite uma temperatura em graus Fahrenheit\n");
+    scanf("%f", &f);
+    
+    c = (5 * (f-32) / 9) ;    
+    
+    printf("A temperatura equivale a %.2f graus celsius", c);
+    return 0;
+  }
