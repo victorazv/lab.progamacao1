@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdio.h>
+
+int main(){
+    int x, y, a ;
+    float z, b, c ;
+    printf("Digite dois numeros inteiros e um real ");    
+    scanf("%d", &x);
+    scanf("%d", &y);
+    scanf("%f", &z);
+    a = (2 * x) * (y / 2);  
+    b = (3 * a) + z;
+    c = z * z * z;    
+    printf("A resposta da letra A eh: %d\nA letra B eh: %2.f\n A letra C eh: %2.f\n", a, b, c);
+    system("pause");
+    return 0;
+}
