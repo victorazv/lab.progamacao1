@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+    float peso, altura, pideal;
+   
+    printf("Digite o seu peso e altura");
+    scanf("%f", &peso);
+    scanf("%f", &altura);
+    pideal = (72.7*altura) - 58;
+    printf("O seu peso ideal eh : %fkg\n", pideal);
+
+    system("pause");
+    return 0;
+}
