@@ -1,0 +1,15 @@
+#include <stdio.h>
+#define P 780000
+
+int main (){
+
+float x, y, z;
+	
+x = 0.46 * P ;
+y = 0.32 * P;
+z = P - (x + y);
+
+printf("O primeiro ganhador recebeu %.2f\n O segundo %.2f\n E o terceiro %.2f\n", x, y, z);
+
+return 0;
+}
