@@ -1,0 +1,17 @@
+#include <stdio.h>
+#define DIA 30
+
+int main (){
+
+int d;
+float r;
+	
+printf("Digite quantos dias o encanador trabalhou\n");
+scanf("%d", &d);
+d = d * DIA;
+r = 0.92 * d ;
+
+printf("A quantia a ser paga ao encanador eh R$%.2f\n", r);
+
+return 0;
+}
