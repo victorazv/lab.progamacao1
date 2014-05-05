@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+
+int a, b;
+float h;
+
+printf("Digite o valor do cateto A\n");
+scanf("%d", &a);
+
+printf("Digite o valor do cateto B\n");
+scanf("%d", &b);
+
+a = a * a;
+b = b * b;
+
+h = a + b;
+
+printf("A hipotenusa eh %.2af", h);
+
+return 0;
+}
