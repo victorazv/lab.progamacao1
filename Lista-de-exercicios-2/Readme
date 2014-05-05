@@ -1,0 +1,61 @@
+Professor: Danilo Silva dos Santos - UFBA
+MATA57 - Laboratório de Programação 1
+Lista - 2
+1. Efetuar a leitura de um numero real e apresentar o resultado do quadrado desse
+numero.
+2. Ler um numero e retorne seu antecessor e seu sucessor
+3. Efetuar a leitura de trés valores e apresentar como resultado final a soma dos
+quadrados dos três valores lidos
+4. Receber o salario de um funcionário, calcular e mostrar seu novo salário, sabendo que
+ele recebeu um aumento de 25%.
+5. A importância de R$ 780.000,00 será dividida entre três ganhadores de um concurso.
+Sendo que da quantia total: O primeiro ganhador recebera 46%; O segundo recebera
+32%; O terceiro recebera o restante; Calcule e imprima a quantia ganha por cada um
+dos ganhadores.
+6. Uma empresa contrata um encanador a R$ 30,00 por dia. Crie um programa que solicite
+o numero de dias trabalhados pelo encanador e imprima a quantia liquida que devera
+ser paga, sabendo-se que são descontados 8% para imposto de renda.
+7. Sejam a e b os catetos de um triangulo,faça um programa que entre com os valores de
+a e b, e ache o valor da hipotenusa e imprima o resultado.
+8. Faça um programa para ler um numero inteiro, positivo de três dígitos, e gerar outro
+numero formado pelos dígitos invertidos do numero lido.
+9. Receber o salário de um trabalhador e o valor da prestação de um empréstimo, se a
+prestação for maior que 20% do salário imprima: “Empréstimo não concedido”, caso
+contrario imprima: “Empréstimo Concedido”
+10. Escreva o menu de opções abaixo, leia a opção do usuário e execute a operação
+escolhida Escreva uma mensagem de erro se a opção escolhida for invalida.
+1- Soma de 2 números.
+2- Diferença entre 2 números (maior pelo menor).
+3- Produto entre 2 números.
+4- Divisão entre 2 números (o denominador não pode ser zero).
+11. . Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou não
+se aposentar. As condições para aposentadora são:Ter pelo menos 65 anos, ou ter
+trabalhado pelo menos 30 anos, ou ter pelo menos 60 anos e trabalhado pelo menos 25
+anos.
+12. Faça um programa que leia trés números inteiros positivos e efetue o caculo de uma
+das seguintes médias de acordo com um valor numérico digitado pelo usuário mostrado
+na tabela a seguir.
+13. . Considere a tabela abaixo, Escreva um programa que, dado o valor da venda, imprima
+a comissão que deverá ser paga ao vendedor.
+14. As tarifas de certo parque de estacionamento são as seguintes: 1.a e 2.a hora - R$
+1,00 cada 3.a e 4.a hora - R$ 1,40 cada 5.a hora e seguintes - R$ 2,00 cada. O numero
+de horas a pagar é sempre inteiro e arredondado por excesso. Deste modo, quem
+estacionar durante 61 minutos pagara por duas horas, que é o mesmo que pagaria se
+tivesse permanecido 120 minutos. Os momentos de chegada ao parque e partida deste
+são apresentados na forma de pares de inteiros, representando horas e minutos.Por
+exemplo, o par 12 50 representara ”dez para a uma da tarde”. Pretendesse um
+programa que, lidos pelo teclado os momentos de chegada e de partida, escreva na tela
+o preço cobrado pelo estacionamento. Devera haver validação de dados. Admite-se que
+a chegada e a partida se dão com intervalo não superior a 24 horas (mas cujo controle
+de verificação não passa pelo programa aqui em causa). Portanto, se uma dada hora
+de ˜chegada for superior a da partida, isso não é uma situação de erro, significará que a
+partida ocorreu no dia seguinte ao da chegada.
+15. Faça uma prova de matemática para crianças que estão aprendendo a somar números
+inteiros menores do que cem. Escolha números aleatórios entre 1 e 100, e mostre na
+tela a pergunta: qual e a soma de ”a”+ ”b”, onde ”a” e ”b”são os números aleatórios.
+Peça resposta. Faca cinco perguntas ao aluno, e mostre para ele as perguntas e as
+respostas corretas, alem de quantas vezes o aluno acertou.
+16. Fac um programa que receba a altura e o sexo de uma pessoa e calcule e mostre seu
+peso ideal, utilizando as seguintes formulas (onde h corresponde a altura):
+17. Faça um algoritmo que calcule o IMC de uma pessoa e mostre sua classificação de
+acordo com a tabela abaixo:
