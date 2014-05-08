@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+int numero, i=1,soma,cont, maior, menor, par=0, contp=0; 
+float media, mediap;
+
+mediap = 0;
+
+printf("Digite um numero inteiro e 0 sair do programa\n");
+scanf("%d",&numero); 
+maior = numero;
+menor = maior;
+soma = numero;
+cont = 0;
+for(i=2; numero > 0; i++){ 
+	printf("Digite um numero inteiro\n");
+	scanf("%d",&numero);
+    if(numero != 0){
+    	if(numero > maior){
+    		maior = numero;
+    	} 
+    	if (numero < menor){
+    		menor = numero;
+    	} 
+        if (numero%2 == 0){
+		  par = par + numero;
+    		contp ++;
+	   }
+    }
+	cont = cont+1;
+	soma = soma + numero;
+}
+media = soma/cont;
+mediap = par/contp;
+printf("A soma dos numero eh %d\n", soma);
+printf("A quantidade de numero digitados eh %d\n", cont);
+printf("A media eh %.2f\n", media);
+printf("O maior foi o %d, o menor foi %d\n" , maior, menor); 
+printf("A media dos numeros pares eh %.2f\n", mediap);
+system("pause");
+return 0;
+}
