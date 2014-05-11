@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+/*P*/
+char pegaString(){
+	char num[11];
+	
+	printf("Digite um numero de binario de 10 caracteres para saber quantos 1 ele contem\n");
+	fgets(num, 11, stdin);
+	printf("%s", num);
+	return num[11];
+}
+
+char procura1(st){
+	char st1[1];
+	int i = 0, x = 0;
+	
+	st1[0] = "1";
+	
+	for(x = 0; x < 11; x++){
+		if(strstr (st, st1)){
+			i++;
+		}
+	x++;
+	}
+	printf("Tem %d numero(s) 1 \n", i);
+}
+
+int main (){
+char st[11];
+
+st[11] = pegaString();
+
+procura1(st[11]);
+
+return 0;
+}
