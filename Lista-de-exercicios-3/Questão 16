@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void soma(){
+	int a, b, auxiliar, i, n, s = 0;
+  a = 0;
+  b = 1;
+  
+  n = 4000000;
+  printf("Soma dos elementos pares ate 4000000 da sequencia de Fibonacci\n");
+
+  for(i = 0; i < n; i++)
+  {
+    auxiliar = a + b;
+    a = b;
+    b = auxiliar;
+ 
+ 	if((auxiliar % 2) == 0 ){
+ 		s = s + auxiliar;
+ 	}
+  }
+printf("%d", s);	
+}
+
+int main(){
+
+soma();
+
+return 0;
+}
