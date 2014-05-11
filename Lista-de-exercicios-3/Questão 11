@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+
+char pegaString(){
+	char num[11];
+	
+	printf("Digite um numero de binario de 10 caracteres:\n");
+	fgets(num, 11, stdin);
+	printf("%s", num);
+	return num[11];
+}
+
+void novaString(st){
+	int i = 0;
+	while (st[i]){
+		if(st[i] == 0){
+			st[i] = 0;
+		}
+	}
+}
+
+int main (){
+char st[11];
+
+st[11] = pegaString();
+novastring(st[11]);
+
+return 0;
+}
