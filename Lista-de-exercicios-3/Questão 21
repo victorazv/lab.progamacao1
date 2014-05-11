@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+  
+void vet(){
+	int v[10], p = 0, i;
+
+	for(i = 0; i < 10; i++){
+		printf("Digite um numero inteiro");
+		scanf("%d", &v[i]);	
+		if((v[i] % 2 == 0)){
+			p++	;
+		}
+}
+printf("No vetor tem %d elementos pares", p);
+}  
+  
+int main(){
+vet();
+
+return 0;
+}
