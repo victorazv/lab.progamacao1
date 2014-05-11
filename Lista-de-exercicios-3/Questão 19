@@ -12,7 +12,7 @@ void vet(){
 			p = i;
 		}
 }
-printf("O mairo numero digitado foi %d e esta alocado na posicao %d do vetor", maior, p);
+printf("O maior numero digitado foi %d e esta alocado na posicao %d do vetor", maior, p);
 }  
   
 int main(){
