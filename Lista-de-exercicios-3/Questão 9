@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int fFor(){
+void fFor(){
 	int i;
 	printf("Usando o For\n");
 	for	(i = 1; i<101; i++){
@@ -8,7 +8,7 @@ int fFor(){
 	}
 }
 
-int fWhile(){
+void fWhile(){
 	int i;
 	printf("\nUsando o While\n \n");
 	i = 1;
@@ -18,7 +18,7 @@ int fWhile(){
 	}
 }
 
-int fDoWhile(){
+void fDoWhile(){
 	int i;
 	printf("\nUsando o do While\n\n");
 	i = 1;
