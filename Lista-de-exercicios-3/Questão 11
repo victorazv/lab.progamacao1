@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+/*P*/
 char pegaString(){
 	char num[11];
 	
@@ -17,6 +17,7 @@ void novaString(st){
 			st[i] = 0;
 		}
 	}
+	printf("%s"st);
 }
 
 int main (){
