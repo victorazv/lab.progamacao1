@@ -1,13 +1,12 @@
 #include <stdio.h>
 
+int x;
+
 int num(){
-	int x;
 	printf("Digite um numero inteiro positivo para saber os seus divisores:\n");
 	scanf("%d", &x);
-	return x;
 }
-
-void div(x){
+void div(){
 	int i, z;
 	for(i = 1; i <= x; i++){
 		if((x % i) == 0) {
@@ -19,8 +18,7 @@ printf("Tem %d divisores\n", z);
 
 int main(){
 
-int x;
-x = num();
+num();
 div(x);
 
 return 0;
