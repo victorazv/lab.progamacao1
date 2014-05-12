@@ -1,9 +1,14 @@
 #include <stdio.h>
 
-int soma(){
-	int soma,i;
+int soma;
+
+void exibe(){
 	soma=0;
-	printf("Soma dos 50 primeiros numeros pares\n");
+	printf("Soma dos 50 primeiros numeros pares\n");	
+}
+
+int somar(){
+	int i;
 	for(i=2;i<=100;i++){
 		if(i%2==0){
 			soma=soma+i;
@@ -14,7 +19,8 @@ int soma(){
 
 int main(){
 
-soma();
+exibe();
+somar();
 
 return 0;
 }
