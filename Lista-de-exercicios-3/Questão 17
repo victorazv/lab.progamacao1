@@ -1,23 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
   /*P*/
-int main(){
- int num, invertido, digito, maior, i;
- 
- for(i = 0; i < 999; i++){ 
-	 num = 999 * i;
-	 invertido = 0;
+
+int maior;
+
+void palindromo() {
+	int num, invertido, digito, i;	 
+	 for(i = 0; i < 999; i++){ 
+		 num = 999 * i;
+		 invertido = 0;
 	
-	 while(num != 0){
-	    digito = num % 10;
-	    invertido = (invertido * 10) + digito;
-	    num = num / 10;
-	 } 
-	 if(num == invertido){
-	    maior = num;
+		 while(num != 0){
+		    digito = num % 10;
+		    invertido = (invertido * 10) + digito;
+		    num = num / 10;
+		 } 
+		 if(num == invertido){
+		    maior = num;
+		}
 	}
+} 
+void imprime(){
+	 printf("O maior palindromo eh %d", maior);
 }
-printf("O maior palindromo eh %d", maior);
+int main(){
+ 
+palindromo();
+imprime();
 
 return 0;
 }
