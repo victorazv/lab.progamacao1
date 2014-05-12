@@ -8,7 +8,7 @@ lerX(){
 	scanf("%d", &x);	
 }
 
-int nums(){
+int numeros(){
 	int maior, menor;
 
     if(x >= 0){
@@ -35,6 +35,7 @@ int nums(){
 int main(){
 
 lerX();
-nums();
+numeros();
+
 return 0;
 }
