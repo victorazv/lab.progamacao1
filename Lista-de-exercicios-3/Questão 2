@@ -1,14 +1,18 @@
 //Programa feito para valores inteiros
 #include<stdio.h>
 #include<stdlib.h>
-int main(){
-    int h, cons, cod, i, ctotal, v, maior, menor, media, c1, c2, c3;
+
+int h, cons, cod, i, ctotal, v, maior, menor, media, c1, c2, c3;
+
+int lerHabitantes(){
     i = 0;
     c1 = c2 = c3 = 0;
     printf("Codigo do consumidor :\n1 = Residencial\n2 = Comercial\n3 = Industrial\n\n");
     printf("Digite a quantidade de habitantes da cidade:\n");
     scanf("%d", &h);
-    if(h > 0){
+}
+int Habitantes(){
+	    if(h > 0){
         printf("Digite o valor do Kwh\n");
         scanf("%d", &v);
         
@@ -33,7 +37,6 @@ int main(){
                     c3 = c3 + cons;
                     break;
         }
-
         while(i < h){
             printf("Digite quantos Kwh foram consumidos para o habitante %d\n", i);
             scanf("%d",&cons);
@@ -67,5 +70,11 @@ int main(){
         printf("A cidade não tem habitantes\n");
     }
     system("pause");
-    return 0;
+}
+
+int main(){
+    lerHabitantes();
+    Habitantes();
+    
+	return 0;
 }
