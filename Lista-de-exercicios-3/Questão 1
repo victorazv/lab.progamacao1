@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-int main(){
+
+int nums(){
 	int x, maior, menor;
 
 	printf("Digite um numero inteiro. Digite um numero inteiro negativo para sair e saber o maior e menor numero digitado\n");
@@ -23,5 +24,11 @@ int main(){
 		}
 	}
 	system("pause");
-	return 0;
+
+}
+
+int main(){
+	
+nums();
+return 0;
 }
