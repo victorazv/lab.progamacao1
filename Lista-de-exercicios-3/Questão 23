@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-  
+ 
+float pontos = 0;
+
 float ler(){
-	float v[15], pontos= 0;
+	float v[15];
 	int i;
 	
 	printf("Digite a nota dos 15 alunos\n");
@@ -10,10 +12,9 @@ float ler(){
 		scanf("%d", &v[i]);
 		pontos = pontos + v[i];
 	}
-return pontos;
 }
 
-void med(pontos){
+void media(pontos){
 	float media;
 
 	media = pontos / 15;
@@ -22,10 +23,8 @@ void med(pontos){
 	
 int main(){
 
-float pontos;
-
-pontos = ler();
-med(pontos);
+ler();
+media(pontos);
 
 return 0;
 }
