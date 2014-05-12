@@ -1,11 +1,16 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int nums(){
-	int x, maior, menor;
+int x;
 
+lerX(){
 	printf("Digite um numero inteiro. Digite um numero inteiro negativo para sair e saber o maior e menor numero digitado\n");
-	scanf("%d", &x);
+	scanf("%d", &x);	
+}
+
+int nums(){
+	int maior, menor;
+
     if(x >= 0){
         maior = x ;	
 		menor = x ;	
@@ -28,7 +33,8 @@ int nums(){
 }
 
 int main(){
-	
+
+lerX();
 nums();
 return 0;
 }
