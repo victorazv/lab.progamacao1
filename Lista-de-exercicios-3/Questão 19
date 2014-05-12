@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+int maior = 0, p = 0;
   
 void vet(){
-	int v[10], maior = 0 ,p = 0, i;
+	int v[10], i;
 
 	for(i = 0; i < 10; i++){
 		printf("Digite um numero inteiro");
@@ -11,12 +13,18 @@ void vet(){
 			maior = v[i];
 			p = i;
 		}
-}
-printf("O maior numero digitado foi %d e esta alocado na posicao %d do vetor", maior, p);
+	}
 }  
+
+void imprime(){
+	printf("O maior numero digitado foi %d e esta alocado na posicao %d do vetor", maior, p);
+}
   
 int main(){
+
+imprime();
 vet();
 
 return 0;
 }
+
