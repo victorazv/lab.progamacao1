@@ -1,0 +1,29 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+
+char st1[100],st2[100]; 
+
+ler(){
+	printf("Digite uma palavra: "); 
+	gets(st1); 
+	
+}
+inverte(){
+	int i,j; 
+	for(i=0;st1[i];i++); {
+		i = i-1; 
+	}	
+	for(j=0,i;i>=0;j++){ 
+		st2[j]=st1[i]; 
+		i--;
+	} 
+	st2[j]='\0'; 
+	printf("A string digitada foi: %s \nE a invertida eh: %s \n",st1,st2); 
+}
+int main() { 
+
+ler();
+inverte();
+
+system("pause"); 
+} 
