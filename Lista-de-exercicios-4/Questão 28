@@ -1,0 +1,30 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+
+char nome[10], sexo[1];
+int idade;
+
+
+ler(){
+	printf("Digite um nome:\n"); 
+	gets(nome); 
+	printf("Digite o sexo, f ou m:\n"); 
+	gets(sexo); 
+	printf("Digite a idade:\n"); 
+	scanf("%d", &idade) ;
+}
+imprime(){
+	if((sexo[0] == 'f') && idade<25){
+		printf("Nome: %s\nAceita\n", nome );
+	}
+	else{
+		printf("Não aceita");
+	}
+}
+int main() { 
+
+ler();
+imprime();
+
+return 0;
+} 
