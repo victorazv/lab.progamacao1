@@ -15,7 +15,7 @@ calcula(){
 	for(i=0; st1[i]; i++){
 		if((st1[i] == 'a') || (st1[i] == 'e') || st1[i] == 'i' || st1[i] == 'o' || st1[i] == 'u'){
 			c++ ;
-			st1[i] == x;
+			st1[i] = x;
 		}
 	}	
 	printf("Tem %d volgais\n", c);
