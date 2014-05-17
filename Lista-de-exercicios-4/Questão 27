@@ -1,0 +1,22 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+
+char nome[10];
+
+ler(){
+	printf("Digite um nome:\n"); 
+	gets(nome); 
+}
+imprime(){
+	int i;
+	for(i=0; i<4; i++){
+		printf("%s", nome[i]);
+	}
+}
+int main() { 
+
+ler();
+imprime();
+
+return 0;
+} 
