@@ -1,0 +1,30 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+
+char st1[10], x[1];
+
+ler(){
+	printf("Digite uma palavra:\n"); 
+	gets(st1); 
+	printf("Digite uma letra:\n"); 
+	gets(x); 
+}
+calcula(){
+	int i, c= 0;
+	 
+	for(i=0; st1[i]; i++){
+		if((st1[i] == 'a') || (st1[i] == 'e') || st1[i] == 'i' || st1[i] == 'o' || st1[i] == 'u'){
+			c++ ;
+			st1[i] == x;
+		}
+	}	
+	printf("Tem %d volgais\n", c);
+	printf("Nova palavra: %s\n", st1 );
+}
+int main() { 
+
+ler();
+calcula();
+
+system("pause"); 
+} 
