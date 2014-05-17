@@ -1,0 +1,21 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+
+char st1[10];
+
+ler(){
+	printf("Digite um nome:\n"); 
+	gets(st1); 
+}
+imprime(){
+	if(st1[0] == 'a'){
+		printf("Nome: %s\n", st1 );	
+	}
+}
+int main() { 
+
+ler();
+imprime();
+
+return 0;
+} 
