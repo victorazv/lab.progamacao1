@@ -1,0 +1,19 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+
+char st1[10], x[1];
+
+ler(){
+	printf("Digite um nome:\n"); 
+	gets(st1); 
+}
+calcula(){
+	printf("Tamanho do nome: %d\n", strlen(st1) );
+}
+int main() { 
+
+ler();
+calcula();
+
+return 0;
+} 
