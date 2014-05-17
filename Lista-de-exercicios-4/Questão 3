@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+char string[20];
+
+ler(){
+	printf("Digite a string para saber o tamanho: ");
+    scanf("%s", &string);
+}
+tamanho(){
+	printf("A string tem %d carateres.\n",strlen(string));
+}
+int main(){
+	ler();
+	tamanho();
+    return 0;
+  }
