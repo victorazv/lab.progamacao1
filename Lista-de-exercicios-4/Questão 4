@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+  
+char digitado[20];
+lerString(){
+        printf("Digite a senha para ter acesso:\n");  
+        //fpurge(digitado);
+         fgets(digitado, 20, stdin);
+}
+imprime(){
+        if(strcmp(digitado,"nada")==1){
+            printf("Senha correta\n");
+        }
+       else{
+            printf("Senha incorreta\n");
+        }
+}
+int main(){
+
+lerString();
+imprime();
+  
+return 0;
+}
