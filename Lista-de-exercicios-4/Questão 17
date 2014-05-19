@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+int main(){	
+	char nome[30],valor[10];
+	int i,j,desconto,pagovista;
+	
+	printf("digite o nome da mercadoria: ");
+	scanf("%s",nome);
+	printf("digite o valor total: ");
+	scanf("%s",valor);
+	
+	desconto = ((10*valor)/100);
+	pagovista = desconto-total;
+	
+	printf("\nO nome da mercadoria eh: %c",nome,"\n O valor total eh: %c",valor);
+	printf("\nvalor do desconto eh: %d",desconto,"\n O valor a ser pago a vista eh: %d",pagovista);
+	
+	return 0;
+}
