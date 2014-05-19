@@ -8,11 +8,12 @@ void ler (char s){
 	printf("%s",string);
 }
 int main(){
-	char string1[30];
-	
-	printf("digite uma string: ");
-	scanf("%s",string1);
-	ler(string1);
 
-	return 0;
+char string1[30];
+
+printf("Digite uma string: ");
+scanf("%s",string1);
+ler(string1);
+
+return 0;
 }
