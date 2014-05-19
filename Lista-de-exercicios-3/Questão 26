@@ -1,0 +1,32 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+
+int main(){ 
+
+int vet[10], i, j, k, cont, x;
+
+printf("O vetor aceita 0 e os inteiros positivos.\n\n");
+for(i=0; i<10; i++){
+	printf("Preencha a posicao %d do vetor: ", i);
+	scanf("%d", &vet[i]);
+}
+for(i=0; i<10; i++){
+	cont = 0;
+	for(j=0; j<10; j++){
+		if(vet[i] == vet[j]){
+			cont++;
+			if(cont == 2){
+				x = vet[i];
+				cont=0;
+				for(k=0; k<10; k++){
+					if(vet[k] == vet[i]){
+						vet[k] = -99 + k;
+					}
+				}
+			printf("%d se repete\n", x);
+			}
+		}
+	}
+}
+return 0;
+}
