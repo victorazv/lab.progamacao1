@@ -1,0 +1,15 @@
+int main(){
+	int numero, i, x;
+	printf("digite um numero inteiro");
+	scanf("%d",&numero);
+	for (i=1; i >= numero; i++){
+		x = i%2;
+		if( x != 0){
+			printf("%d",&x);
+		}
+		else{
+			return 0;
+		}
+	}
+	return 0;
+}
