@@ -1,17 +1,27 @@
 #include<stdio.h>
 #include<string.h>
 
-int main(){	
-	char frase[30];
-	int i;
-	
+char frase[30];
+
+ler(){
 	printf("digite uma frase: ");
 	scanf("%s",frase);
-	for (i=0;i==strlen(frase);i++){
+}
+
+vetor_resultante(){
+int i;
+for(i=0;i==strlen(frase);i++){
 		if(frase[i] == {''}){
 			frase[i]=frase[i+1];
 		}
 	}
 	printf("%c",frase);
-	return 0;
+}
+
+int main(){	
+	
+ler();
+vetor_resultante();
+
+return 0;
 }
