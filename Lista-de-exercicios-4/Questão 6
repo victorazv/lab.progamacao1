@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+int main()
+{	
+	char str1[60],str2[30],concat[3],x[30];
+	int i,j,num;
+	printf("digite uma string: ");
+	scanf("%s",str1);
+	printf("digite uma string: ");
+	scanf("%s",str2);
+
+	printf("digite um valor inteiro positivo: ");
+	scanf("%d",&num);
+
+	concat= substr($str2,0,num);
+	strcat(str1,concat)
+	printf("%s",str1,"NULL");
+	return 0;
+}
