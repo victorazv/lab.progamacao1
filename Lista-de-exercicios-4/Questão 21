@@ -2,13 +2,19 @@
 #include<conio.h>
 #include<string.h>
 
-int main(){	
-	char palavra[30];
-	int i,j;
-	
-	printf("digite uma palavra em letras maiusculas: ");
+char palavra[30];
+
+void ler(){
+	printf("Digite uma palavra em letras maiusculas: ");
 	scanf("%s",&palavra);
-	printf("palavra em maiuscula eh: %s",strlwr(palavra));
-	
-	return 0;
+}
+void maiusculo(){
+	printf("Palavra em maiusculo eh: %s", strupr(palavra));
+}
+int main(){	
+
+ler();
+maiusculo();
+
+return 0;
 }
