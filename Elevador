@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+//Simular elevador
+//Vetor > Cada indice é um andar
+//Se o elevador está
+int t;
+
+int tamanhoElevador(){
+	
+}
+int mudaAndar(){
+	int desejado;
+	printf("Digite o andar desejado:");
+	scanf("%d", &desejado);
+	//verifica se o andar desejado é o mesmo do elevador
+}
+int main(){
+	int ele[5];
+	
+	printf("");
+	
+	return 0;	
+}
