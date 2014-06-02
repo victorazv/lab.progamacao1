@@ -1,24 +1,44 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#define TAM 5
 //Simular elevador
 //Vetor > Cada indice é um andar
 //Se o elevador está
-int t;
+int ele[TAM], t;
+//Para não dar erro. 
+//TAM = TAM - 1;
 
-int tamanhoElevador(){
-	
+int iniciaElevador(){
+    int i;
+    for(i=0; i<TAM; i++){
+        ele[i] = 0;
+    }
+    ele[0] = 1;
 }
+
 int mudaAndar(){
 	int desejado;
-	printf("Digite o andar desejado:");
+	printf("\nDigite o andar desejado:");
 	scanf("%d", &desejado);
-	//verifica se o andar desejado é o mesmo do elevador
+    if((desejado >= 0 ) && (desejado<=TAM)){
+        if(ele[desejado] == 1){
+            printf("\nO elevador ja esta no andar desejado");
+        }
+        else{ 
+            ele[desejado] = 1;
+        }
+    }
+    else{
+        printf("\nO andar desejado nao existe");
+    }
 }
+
 int main(){
-	int ele[5];
-	
-	printf("");
-	
+
+    iniciaElevador();
+    while(1 == 1){
+        mudaAndar();
+    }
+
 	return 0;	
 }
