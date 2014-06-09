@@ -1,0 +1,31 @@
+#include<stdio.h>
+#define tam 15
+
+char *concat(char *s1, char *s2){
+	int i,j, aux=strlen(s1);
+
+	s1[aux] = ' '; 						//Espaço depois da primeira palavra
+	for(i=aux+1,j=0; j<strlen(s2); i++,j++)		//Concatena s2 em s1
+		s1[i] = s2[j];
+	s1[aux+strlen(s2)+1] = '\0';				//Informa onde acaba a nova s1;
+
+	return s1;	
+}
+
+char *recebe(){
+	char *s1;
+	char *s2;
+
+	s1 = (char *)malloc(sizeof(char)*tam);
+	s2 = (char *)malloc(sizeof(char)*tam);
+	gets(s1);
+	gets(s2);
+
+	return concat(s1,s2);	
+}
+
+int main(){
+	puts(recebe());
+	system("pause");
+	return 0;	
+}
