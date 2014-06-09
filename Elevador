@@ -1,13 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define TAM 5
+#define TAM 6
 //Simular elevador
-//Vetor > Cada indice é um andar
+//Vetor >> Cada indice é um andar
 //Se o elevador está
-int eleA[TAM], eleB[TAM], t, andarA, andarB, sA, sB;;
+int eleA[TAM], eleB[TAM], t, andarA, andarB;
 //Para não dar erro. 
 //TAM = TAM - 1;
-
 int iniciaElevador(){
     int i;
     for(i=0; i<TAM; i++){
@@ -16,63 +15,59 @@ int iniciaElevador(){
     }
     eleA[0] = 1;
     eleB[0] = 1;
-    andarA = 0;
-    andarB = 0;
-    sA = 0;//0=parado, 1=subindo, 2=descendo
-    sB = 0;
+    andarA  = 0; 
+    andarB  = 0;
 }
-
 int mudaAndar(){
-	int desejado, cA, cB;
-	printf("\nDigite o andar desejado:");
-	scanf("%d", &desejado);
+    int desejado, cA, cB;
+    cA = 0;
+    cB = 0;
+    printf("\nDigite o andar desejado:");
+    scanf("%d", &desejado);
     if((desejado >= 0 ) && (desejado<=TAM)){
-		if((eleA[desejado] == 1) || (eleB[desejado] == 1)){
-            printf("\nO elevador ja esta no andar desejado");
+        if(eleA[desejado] == 1){
+            printf("O elevador A esta no andar desejado.\n");
+        }
+        else if(eleB[desejado] == 1){
+            printf("O elevador B esta no andar desejado.\n");
         }
         else{
-			//verifica qual elevador esta mais perto do destino
-			cA = andarA - desejado;
-			cB = andarB - desejado;
-			if(cA > cB){
-				andarA = 0;
-				eleA[desejado] = 1;
-            	andarA = desejado;
-			}
-			else{
-				andarB = 0;
-				eleB[desejado] = 1;
-            	andarB = desejado;
-			/*if(sA==0 && sB==0){
-				andarA = 0;
-				eleA[desejado] = 1;
-            	andarA = desejado;
-				if(desejado==0 || desejado==5){
-					sA=0;
-					sB=0;
-				}
-			}*/
-        	}
-    	}
-	}
-else{
+            //verifica qual elevador esta mais perto do destino
+            cA = desejado - andarA;
+            cB = desejado - andarB;
+            if(cA > cB){
+                eleA[andarA] = 0;//O elevador não esta mais no andar anterior
+                andarA = desejado;//atualiza o andar do elevador
+                eleA[desejado] = 1;//O elevador esta no andar desejado
+                printf("\nO elevador A foi ate o %d andar.", desejado);
+            }
+            else{
+                eleB[andarB] = 0;//O elevador não esta mais no andar anterior
+                andarB = desejado;//atualiza o andar do elevador
+                eleB[desejado] = 1;//O elevador esta no andar desejado
+                printf("\nO elevador B foi ate o %d andar.", desejado);
+            }
+        }
+    }
+    else{
         printf("\nO andar desejado nao existe");
     }
+}
 int main(){
-	int i;
+    int i;
     iniciaElevador();
- 	
- 	printf("Elevador de 5 andares. Para ir ao térreo, digite 0.\n");
- 	printf("----------");
- 	for(i=0; i<5; i++){
-	 	printf("|         |\n");
-	 	printf("| Andar %d |\n", i);
-	 	printf("----------");
-		printf("|         |\n");
- 	}
- 	printf("----------");
+    
+    printf("Elevador de 5 andares. Para ir ao terreo, digite 0.\n");
+    printf("----------");
+    for(i=0; i<TAM; i++){
+        printf("|         |\n");
+        printf("| Andar %d |\n", i);
+        printf("----------");
+        printf("|         |\n");
+    }
+    printf("----------");
     while(1 == 1){
         mudaAndar();
     }
-	return 0;	
+    return 0;   
 }
