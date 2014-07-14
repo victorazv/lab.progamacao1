@@ -11,9 +11,10 @@ int main (void ) {
 				   char nome[20];
                    char nome2[20];
                    
-                   char arq1[1000];
+                   char arq1[2000];
                    char arq2[1000];
-                   char arq3[2000];
+                   
+                   char *nome3 = "arq3.txt";                  
                    
                    printf("Digite nome do arquivo 1. Ex: a.txt\n");
                    scanf("%s", &nome);
@@ -43,8 +44,16 @@ int main (void ) {
                    }                  
                    
 				   strcat(arq1, arq2);
-                   printf("%s", arq1);
                   
 				   fclose(pa);
+				   if (( pa = fopen(nome3, "w+")) == NULL) {
+                                           printf("\n\nNao foi possivel abrir o arquivo.\n");
+                                           exit(1);
+                   }
+                   else{
+                   		fputs(arq1, pa);
+                   		printf("Arquivo arq3.txt criado com sucesso!");
+				   }
+				   
 				   getchar(); /* Espera o usuario digitar alguma coisa */
 }
