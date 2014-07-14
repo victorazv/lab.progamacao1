@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define MAX 10	
+int main (void ) {
+                   char linha[MAX];
+                   FILE *pa;
+                   char *nome = "arq.txt";
+                   printf("Digite o texto desejado. Para encerrar, entre com o numero zero.\n");
+                   /* Abre o arquivo para leitura e escrita */
+                   if (( pa = fopen(nome, "w+")) == NULL) {
+                                           printf("\n\nNao foi possivel abrir o arquivo.\n");
+                                           exit(1);
+                   }
+                   /* Cada linha digitada sera gravada no arquivo */
+                   gets(linha);
+                   	
+                   while (!feof(stdin) && linha[0] != '0')  {
+                                           strcat(linha, "\n");
+                                           fputs(linha, pa);
+                                           gets(linha);
+                   }
+                   rewind(pa);       /* volta ao inicio do arquivo */
+                   printf("\nFim da escrita e inicio da leitura.\n");
+                   fgets(linha, MAX, pa);
+                   while (!feof(pa)) {
+                                           printf("%s",linha);
+                                           fgets(linha, MAX, pa);
+                   }
+                   fclose(pa);
+                   getchar(); /* Espera o usuario digitar alguma coisa */
+}
