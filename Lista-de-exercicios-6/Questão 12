@@ -1,1 +1,49 @@
-//
+#include <stdio.h>
+
+void RecebeDados();
+void ImprimeDados();
+
+int main(){
+	RecebeDados();
+
+	system("pause");
+	return 0;
+}
+
+void RecebeDados(){
+	int i=0;
+	char nome1[30]="Juvenal Andrade";
+	char nome2[30]="Helena Souza";
+	FILE *arquivo = fopen("emp.txt","w");
+	if(arquivo == NULL){
+		printf("Sem memoria.\n");
+		exit(1);
+	}
+
+	for(i=1; i<51; i++)
+		if(i % 2 == 0)
+			fprintf(arquivo,"%s\t%d\n",nome1,i);
+		else
+			fprintf(arquivo,"%s\t%d\n",nome2,i);
+	fclose(arquivo);
+	ImprimeDados();
+	return;
+}
+
+void ImprimeDados(){
+	int i;
+	char nome[30];
+	FILE *arquivo = fopen("emp.txt","r");
+	if(arquivo == NULL){
+		printf("Sem memoria.\n");
+		exit(1);
+	}
+
+	while(!feof(arquivo)){
+		fflush(stdin);
+		fscanf(arquivo,"%[^\t]\t%d",&nome,&i);
+		printf("%s\t%d",nome,i);
+
+	}
+	return;
+}
